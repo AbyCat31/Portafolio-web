@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	
+	<title>Aby Méndez</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- HOJAS DE ESTILO -->
+
+	<link rel="stylesheet" href="style/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="style/all.min.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/slick.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/animate.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/style.css" type="text/css" media="all">
+
+
+<style type="text/css">
+============================================================================================ */
+
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 400;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 500;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 700;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 900;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
+}</style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+
+<!-- Encabezado de escritorio -->
+<header class="desktop-header-3 fixed-top">
+
+    <div class="container">
+	
+        <nav class="navbar navbar-expand-lg navbar-dark">
+           
+            <b class="navbar-brand">Aby Méndez</b> 
+
+            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto scrollspy">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Acerca de mí</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#tools" class="nav-link">Herramientas</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Precios</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- Esquema de disposición principal -->
+<main class="content-3">
+	
+	<!-- Sección inicio -->
+	<section id="home" class="home d-flex align-items-center">
+		<div class="container">
+
+			<!-- Introducción -->
+			<div class="intro">
+				<!-- Imagen de perfil -->
+				<img src="data:image/jpeg;base64,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" style="width: 150px;border-radius: 100px" class="mb-4">
+
+				<!-- Información -->
+				<h1 class="mb-2 mt-0">Aby Méndez</h1>
+				<span>Soy un <span class="text-rotating morphext"><span class="animated bounceIn">desarrollador</span></span></span>
+			</div>
+
+			<!-- Capas de paralaje -->
+			<div class="parallax" data-relative-input="true" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+
+				<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-7.20601px, 17.2034px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block;"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"></path></svg>
+
+				<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-4.80401px, 11.4689px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"></path></svg>
+
+				<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-7.20601px, 17.2034px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"></path></svg>
+
+				<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-14.412px, 34.4068px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"></rect></svg>
+
+				<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-4.80401px, 11.4689px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"></rect></svg>
+
+				<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-12.01px, 28.6724px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"></path><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"></path></g></svg>
+
+				<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-9.60801px, 22.9379px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"></path></svg>
+
+				<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-7.20601px, 17.2034px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"></rect></svg>
+
+				<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-7.20601px, 17.2034px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"></path></svg>
+
+				<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-4.80401px, 11.4689px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"></path><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"></path></g></svg>
+
+				<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(-12.01px, 28.6724px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block;"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"></path></svg>
+
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- Sección acerca de mí -->
+	<section id="about">
+
+		<div class="container">
+			
+			<!-- Sección título -->
+			<h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Acerca de mí</h2>
+
+			<div class="spacer" data-height="60" style="height: 60px;"></div>
+			
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="text-center text-md-left">
+						<!-- Imagen de perfil -->
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuld1AFqKQGfKE8aXZEqxrilfbwvOpi2pvxg&usqp=CAU" style="width: 150px;border-radius: 100px" class="mb-4">
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+				</div>
+
+				<div class="col-md-9 triangle-left-md triangle-top-sm">
+					<div class="rounded bg-white shadow-dark padding-30">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- Texto acerca de mí -->
+								<p>Soy Aby Méndez, a continuación te presento mis habilidades de coding:</p>
+
+								<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+							</div>
+							<div class="col-md-6">
+								<!-- Elemento de una habilidad -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">Desarrollo web</h4>
+										<span class="float-right">75%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" data-color="#FFD15C" style="background-color: orange; width: 85%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="20" style="height: 20px;"></div>
+								</div>
+
+								<!-- Elemento de una habilidad -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">Diseño UI/UX</h4>
+										<span class="float-right">45%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" data-color="#FF4C60" style="background-color: red; width: 10%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="20" style="height: 20px;"></div>
+								</div>
+
+								<!-- Elemento de una habilidad -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">javascript</h4>
+										<span class="float-right">60%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" data-color="#6C6CE5" style="background-color: purple; width: 10%;">
+										</div>
+									</div>
+                				  <div class="spacer" data-height="20" style="height: 20px;"></div>
+								</div>
+
+				                <!-- Elemento de una habilidad -->
+				                <div class="skill-item">
+				                  <div class="skill-info clearfix">
+				                    <h4 class="float-left mb-3 mt-0">Aprendizaje automático</h4>
+				                    <span class="float-right">55%</span>
+				                  </div>
+				                  <div class="progress">
+				                    <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55" data-color="#6C6CE5" style="background-color: green; width: 10%;">
+				                    </div>
+				                  </div>
+				                </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Fin de la fila -->
+
+			<div class="spacer" data-height="70" style="height: 70px;"></div>
+			
+			<div class="row">
+				
+				<div class="col-md-3 col-sm-6">
+					<!-- Elemento de un hecho -->
+					<div class="fact-item">
+						<div class="details">
+							<h3 class="mb-0 mt-0 number"><em class="count">76</em></h3>
+							<p class="mb-0">Proyectos completados</p>
+						</div>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<!-- Elemento de un hecho -->
+					<div class="fact-item">
+						<div class="details">
+							<h3 class="mb-0 mt-0 number"><em class="count">160</em></h3>
+							<p class="mb-0">Número de horas dedicadas a HTML</p>
+						</div>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<!-- Elemento de un hecho -->
+					<div class="fact-item">
+						<div class="details">
+							<h3 class="mb-0 mt-0 number"><em class="count">89</em></h3>
+							<p class="mb-0">Número de horas dedicadas a CSS</p>
+						</div>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<!-- Elemento de un hecho -->
+					<div class="fact-item">
+						<div class="details">
+							<h3 class="mb-0 mt-0 number"><em class="count">250</em></h3>
+							<p class="mb-0">Número de horas dedicadas a JS</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+	</section>
+	
+  <!-- Sección proyectos -->
+  <section id="projects">
+
+    <div class="container">
+      
+      <!-- Título de la sección -->
+      <h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Mis proyectos</h2>
+
+      <div class="spacer" data-height="60" style="height: 60px;"></div>
+      
+      <div class="row blog-wrapper">
+        
+        <!-- Elemento de un proyecto -->
+        <div class="col-md-4">
+          <div class="blog-item rounded bg-white shadow-dark wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+            <div class="thumb">
+              <a href="https://mahdihat791.github.io/AI-Mario-Game/">
+                <img src="mario.jpeg" alt="blog-title">
+              </a>
+            </div>
+            <div class="details">
+              <h4 class="my-0 title">
+              	<a href="https://mahdihat791.github.io/AI-Mario-Game/">Juego de Mario AI</a>
+              </h4>
+              <ul class="list-inline meta mb-0 mt-2">
+                <li class="list-inline-item">9 de Mayo del 2024</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del elemento de un proyecto -->
+
+      </div>
+
+    </div>
+
+  </section>
+  
+    <!-- Sección herramientas -->
+  <section id="tools">
+
+    <div class="container">
+      
+      <!-- Título de la sección -->
+      <h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Herramientas y lenguajes de programación</h2>
+
+      <div class="spacer" data-height="60" style="height: 60px;"></div>
+      
+      <!-- Contenedor del portolio -->
+      <div class="row portfolio-wrapper" style="position: relative; height: 595.062px;">
+        
+        <!-- Elemento de una herramienta -->
+        <div class="col-md-4 col-sm-6 grid-item art" data-toggle="modal" data-target="#myModal" style="position: absolute; left: 0%; top: 0px;">
+            <div class="portfolio-item rounded shadow-dark">
+              <div class="details">
+                <h4 class="title">ml5.js</h4>
+              </div>
+              <div class="thumb">
+                <img src="ml5.png" alt="Portfolio-title">
+                <div class="mask"></div>
+              </div>
+            </div>
+        </div>
+        <!-- Fin del elemento de una herramienta -->
+
+      </div>
+    </div>
+
+  </section>
+	
+
+  <!-- Sección de servicios -->
+  <section id="services">
+
+    <div class="container">
+      
+      <!-- Título de la sección -->
+      <h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Servicios</h2>
+
+      <div class="spacer" data-height="60" style="height: 60px;"></div>
+      
+      <div class="row">
+
+        <!-- Caja de servicio -->
+        <div class="col-md-4">
+          <div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#F9D74C" style="background-color: rgb(249, 215, 76);">
+            <img src="svg/service-2.svg" alt="UI/UX design">
+            <h3 class="mb-3 mt-0">Desarrollo web</h3>
+            <p class="mb-0">Tengo una amplia y definida habilidad, así como una extensa experiencia en la creación de sitios web adaptables y profesionales para todo tipo de negocios.</p>
+          </div>
+          <div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+        </div>
+        <!-- Fin de la caja de servicio -->
+
+      </div>
+
+    </div>
+    
+  </section>
+		
+	<!-- Sección de precios -->
+	<section id="pricing">
+
+		<div class="container">
+			
+			<!-- Título de la sección -->
+			<h2 class="section-title wow fadeIn" style="visibility: visible; animation-name: fadeIn;">Precios de los planes</h2>
+
+			<div class="spacer" data-height="60" style="height: 60px;"></div>
+			
+			<div class="row">
+				
+				<!-- Elemento de precio -->
+				<div class="col-md-4 pr-md-0 mt-md-4 mt-0">
+					<div class="price-item bg-white rounded shadow-dark text-center">
+						<img src="svg/price-1.svg" alt="Regular">
+						<h2 class="plan">Sitio web básico</h2>
+						<p>Sitio web básico informativo </p>
+						<p>Precios desde</p>
+						<h3 class="price"><em>$</em>100</h3>
+					</div>
+				</div>
+				<!-- Fin del elemento de precio -->
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+  <!-- Sección de pasatiempos -->
+  <section>
+
+    <div class="container">
+      
+      <!-- Título de la sección -->
+      <h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Pasatiempos</h2>
+
+      <div class="spacer" data-height="60" style="height: 60px;"></div>
+      
+      <div class="row">
+
+        <div class="col-md-6">
+          
+          <!-- Contenedor del pasatiempos -->
+          <div class=" edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+            <!-- Elemento de un pasatiempo -->
+            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <div class="content">
+                <img src="https://i.pinimg.com/736x/da/18/3b/da183b67a337c41dde3e4c9d20de2718.jpg" style="width:40px;">
+                <h3 class="title" style="display: inline-block;">Bailar k-pop, cantar, escuchar k-pop y aprender más sobre mis grupos fav</h3>
+                <hr>
+              </div>
+            </div>
+            <!-- Fin del elemento de un pasatiempo -->
+
+
+            <span class="line"></span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </section>
+	
+	<!-- Sección de datos curiosos -->
+	<section>
+
+		<div class="container">
+			
+			<!-- Título de la sección -->
+			<h2 class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Cosas que me encantan</h2>
+
+			<div class="spacer" data-height="60" style="height: 60px;"></div>
+			
+			<!-- Contenedor de los datos curiosos -->
+			<div class="testimonials-wrapper slick-initialized slick-slider slick-dotted" role="toolbar">
+				
+				<!-- Elemento de un dato curioso -->
+			<div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 2800px; transform: translate3d(-700px, 0px, 0px);">
+
+        	 <div class="testimonial-item text-center mx-auto slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 700px;">
+  			</div>
+
+      		 <div class="testimonial-item text-center mx-auto slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 700px;">
+				<div class="mb-3 mx-auto">
+
+					<img style="border-radius: 20px;" class="img-responsive" src="https://i.pinimg.com/564x/e6/35/f9/e635f9443f375ec6b6c0c8b81988b607.jpg">						
+				</div>
+
+					<h4 class="mt-3 mb-0">Shopping</h4>
+					
+					<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
+						<p class="mb-0">Me gusta ir de compras con mis amigas o ensayar aunque me canse jaja, pero eso se me hace divertido.</p>
+					</div>
+				</div>
+
+      </div></div>
+				
+				
+
+			</div>
+
+
+		</div>
+
+	</section>
+	
+  
+	<!-- Sección de contacto -->
+	<section id="contact" style="background: #353353;padding: 15px;">
+
+		<div class="container">
+			
+			<!-- Título de la sección -->
+			<h2 class="section-title wow fadeInUp" style="margin-left:0px;color: white;visibility: visible; animation-name: fadeInUp;">Ponte en contacto</h2>
+
+			
+			<div class="row">
+				
+				<div class="col-md-8">
+
+					<h3 class="wow fadeInUp" style="color: white;visibility: visible; animation-name: fadeInUp;">Aby Méndez</h3>
+				    <hr style="border: 0.5px solid white;">
+					<img src="https://i.pinimg.com/564x/02/6f/54/026f54d376ba5bcbd1ccc07b507227a5.jpg" style="display: inline-block; width: 100px;border-radius: 100px" class="mb-4">
+            		<p style="margin: 5px; color: white; display: inline-block;">No dude en ponerse en contacto conmigo en mis redes sociales</p>
+
+				</div>
+
+				<div class="col-md-4">
+
+  				    <h3 class="wow fadeInUp" style="color: white;visibility: visible; animation-name: fadeInUp;">SÍGUEME</h3>
+   					<hr style="border: 0.5px solid white;">
+      				<p style="color: white;">Platiquemos</p>
+
+				    <a href="#">
+				      <img src="instagram.png" style="width: 40px;margin: 5px">
+				    </a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	
+</main>
+
+<!-- Botón para ir a la parte superior -->
+<a href="javascript:" id="return-to-top" style="display: none;">
+  <img src="go_to_top.png">
+</a>
+<!-- Modal-->
+<div id="myModal" class="modal fade ">
+    <div class="modal-dialog" >
+          <!-- Contenido del modal-->
+        <div class="modal-content">
+      
+            <button class="close" data-dismiss="modal" style="text-align: right;padding: 10px;">&times;</button>
+            <hr>
+            <div class="modal-body">
+              <p>¡Bienvenido al proyecto ml5! El desarrollo de ml5 no se trata sólo de desarrollar software de aprendizaje automático, sino de hacer que el aprendizaje automático sea accesible para una amplia audiencia de artistas, programadores creativos y estudiantes. La biblioteca proporciona acceso a algoritmos y modelos de aprendizaje automático en el navegador, construyendo sobre TensorFlow.js sin otras dependencias externas. El sesgo en los datos, los daños estereotipados y el crowdsourcing responsable son parte de la documentación en torno a la recopilación y el uso de datos. Estamos construyendo un aprendizaje automático amigable para la web - ¡estamos contentos de que esté aquí! ml5.js está fuertemente inspirado en Processing y p5.js</p>
+             </div>
+
+        </div>
+    </div>
+ </div>
+ <!-- Fin  del modal-->
+<!-- SCRIPTS -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/infinite-scroll.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/morphext.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+      
+
+
+</body>
+
+
+</html>
